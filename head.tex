@@ -1,0 +1,145 @@
+\documentclass[a4paper, 12pt]{article}
+		
+	\usepackage{mathtools}
+	\usepackage{amssymb}
+	\usepackage{amsmath}
+	\usepackage{setspace}
+	\usepackage{mathtext}
+	\usepackage{listings}
+	\usepackage{indentfirst}
+
+	\usepackage{color}
+	\usepackage{graphicx}
+	%\usepackage{showframe}
+	\usepackage{fancyhdr}
+	\usepackage{wrapfig}    
+	\usepackage{floatrow}
+	
+	% Параметры шрифта
+	\usepackage[T1,T2A]{fontenc}
+	\usepackage[utf8]{inputenc}
+	\usepackage[english, russian]{babel}
+	\frenchspacing
+	\onehalfspacing
+
+	% стилевой файл для оформления списка литературы по ГОСТ
+	\bibliographystyle{utf8gost780u}
+	
+	%Настройка подписей к таблицам
+	\floatsetup[table]{capposition = top}
+
+	% Параметры страницы
+	\hoffset=0mm            % Отступ от левого края + 1 дюйм
+	\voffset=0mm            % Отступ от верхнего края + 1 дюйм
+	\oddsidemargin=-5.4mm   % левое поле 25.4 - 5.4 = 20 мм
+	\topmargin=-15.4mm      % верхнее поле 25,4 - 15,4 = 10 мм
+	\textwidth=170mm        % ширина текста
+	\textheight=260mm       % высота текста 297 (A4) - 40
+	\topmargin=-15.4mm      % верхнее поле 25,4 - 15,4 = 10 мм
+	\headheight=2mm         % место для колонтитула
+	\headsep=5mm            % отступ после колонтитула
+	\footskip=7mm           % отступ до нижнего колонтитула
+	
+	% Настройки листингов
+	\lstset{ 
+		language=Haskell,               % Язык программирования 
+		numbers=left,                   % С какой стороны нумеровать
+		%numberstyle=tinycolor{gray},   % Стиль нумерации строк
+		stepnumber=2,                   % Шаг между линиями.
+		numbersep=10pt,                  
+		%backgroundcolor=color{white},  % Цвет подложки. 
+		showspaces=false,               
+		showstringspaces=false,         
+		showtabs=false,                
+		frame=single,                   % Добавить рамку
+		%rulecolor=color{black},        
+		tabsize=2,                      % Tab - 2 пробела
+		breaklines=true,                % Автоматический перенос строк
+		breakatwhitespace=true,         % Переносить строки по словам
+		%title=lstname,                 % Показать название подгружаемого файла
+		%keywordstyle=color{blue},      % Стиль ключевых слов
+		%commentstyle=color{dkgreen},   % Стиль комментариев
+		%stringstyle=color{mauve}       % Стиль литералов
+	}
+		
+\begin{document} 
+
+
+\newcommand{\department}	{} 
+\newcommand{\discipline}	{}
+\newcommand{\labnumber}		{}
+\newcommand{\labname}		{}
+\newcommand{\lecturer}		{}
+
+ 
+\begin{center}
+	\textbf{МИНОБРНАУКИ РОССИИ}\\
+	\textbf{САНКТ-ПЕТЕРБУРГСКИЙ ГОСУДАРСТВЕННЫЙ ЭЛEКТРОТЕХНИЧЕСКИЙ УНИВЕРСИТЕТ}\\ 
+	\textbf{«ЛЭТИ» ИМ. В.И. УЛЬЯНОВА (ЛЕНИНА)}\\
+	\textbf{Кафедра \department}\\
+
+	\vspace*{70mm}
+
+	\textbf{ОТЧЁТ}\\
+	\textbf{по лабораторной работе №\labnumber}\\
+	\textbf{по дисциплине «\discipline»}\\
+	\textbf{Тема: \labname}\\
+
+	\begin{figure}[b]
+		\centering
+		\begin{tabular}{ccc} 
+			Студент гр. 7291 & \underline{\hspace{3cm}} &  Фирюлин Д. И. \\\\
+			Преподаватель & \underline{\hspace{3cm}} & \lecturer\\\\
+		\end{tabular}
+		
+		\vspace*{10mm}
+		Санкт-Петербург
+		
+		\vspace*{2mm}
+		\the\year
+		\vspace*{4mm}
+	\end{figure}
+	
+\end{center}
+\thispagestyle{empty}
+
+\newpage
+\tableofcontents
+
+% =========================== PUT YOUR WATER HERE =============================
+
+
+%\newpage
+%\addcontentsline{toc}{section}{Список литературы}
+%\bibliography{biblio}     %% имя библиографической базы (bib-файла) 
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
