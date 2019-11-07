@@ -160,7 +160,7 @@ def plot_family(family, xlab, ylab, name, caption):
     ax1.xaxis.set_label_coords(1, -0.06)
 
     plt.tight_layout()
-    ax1.ticklabel_format(style='sci', axis='y', scilimits=(0,0))
+    #ax1.ticklabel_format(style='sci', axis='y', scilimits=(0,0))
 
     save_plot_include(plt, name, caption)
 
