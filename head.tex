@@ -64,13 +64,16 @@
 		
 \begin{document} 
 
+\newcommand{\nothing}		{}
 
 \newcommand{\department}	{} 
 \newcommand{\discipline}	{}
-\newcommand{\labnumber}		{}
-\newcommand{\labname}		{}
 \newcommand{\lecturer}		{}
 
+\newcommand{\labnumber}		{}
+\newcommand{\labname}		{}
+
+\input{./../config}
  
 \begin{center}
 	\textbf{МИНОБРНАУКИ РОССИИ}\\
@@ -88,7 +91,9 @@
 	\begin{figure}[b]
 		\centering
 		\begin{tabular}{ccc} 
-			Студент гр. 7291 & \underline{\hspace{3cm}} &  Фирюлин Д. И. \\\\
+			Студент\ifx\companion\nothing \space \else ы \space \fi гр. 7291 & 
+				\underline{\hspace{3cm}} &  Фирюлин Д. И. \\\\
+			\ifx\companion\nothing \else & \underline{\hspace{3cm}} &  \companion \\\\ \fi
 			Преподаватель & \underline{\hspace{3cm}} & \lecturer\\\\
 		\end{tabular}
 		
@@ -104,7 +109,7 @@
 \thispagestyle{empty}
 
 \newpage
-\tableofcontents
+%\tableofcontents
 
 % =========================== PUT YOUR WATER HERE =============================
 
