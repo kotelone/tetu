@@ -4,6 +4,7 @@ default: init
 
 init:
 ifeq ('$(wildcard include)','')
+	chomd +x main.py
 	mkdir include
 	mkdir plots
 	mkdir img
