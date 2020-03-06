@@ -1,5 +1,5 @@
 default: init
-	pdflatex -synctex=1 -interaction=nonstopmode "head".tex
+	pdflatex -synctex=1 -interaction=nonstopmode "head".tex > /dev/null
 
 
 init:
