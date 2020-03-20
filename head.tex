@@ -61,62 +61,61 @@
 		%commentstyle=color{dkgreen},   % Стиль комментариев
 		%stringstyle=color{mauve}       % Стиль литералов
 	}
-		
+
+	\newcommand{\nothing}		{}
+
+	\newcommand{\department}	{} 
+	\newcommand{\discipline}	{}
+	\newcommand{\lecturer}		{}
+	\newcommand{\companion}		{}
+
+	\newcommand{\labnumber}		{}
+	\newcommand{\labname}		{}
+
+	\input{./../config}
+
 \begin{document} 
+	\begin{center}
+		\textbf{МИНОБРНАУКИ РОССИИ}\\
+		\textbf{САНКТ-ПЕТЕРБУРГСКИЙ ГОСУДАРСТВЕННЫЙ ЭЛEКТРОТЕХНИЧЕСКИЙ УНИВЕРСИТЕТ}\\ 
+		\textbf{«ЛЭТИ» ИМ. В.И. УЛЬЯНОВА (ЛЕНИНА)}\\
+		\textbf{Кафедра \department}\\
 
-\newcommand{\nothing}		{}
+		\vspace*{70mm}
 
-\newcommand{\department}	{} 
-\newcommand{\discipline}	{}
-\newcommand{\lecturer}		{}
-\newcommand{\companion}		{}
+		\textbf{ОТЧЁТ}\\
+		\textbf{по лабораторной работе №\labnumber}\\
+		\textbf{по дисциплине «\discipline»}\\
+		\textbf{Тема: \labname}\\
 
-\newcommand{\labnumber}		{}
-\newcommand{\labname}		{}
+		\begin{figure}[b]
+			\centering
+			\begin{tabular}{ccc} 
+				Студент\ifx\companion\nothing \space \else ы \space \fi гр. 7291 & 
+					\underline{\hspace{3cm}} &  Фирюлин Д. И. \\\\
+				\ifx\companion\nothing \else & \underline{\hspace{3cm}} &  \companion \\\\ \fi
+				Преподаватель & \underline{\hspace{3cm}} & \lecturer\\\\
+			\end{tabular}
 
-\input{./../config}
- 
-\begin{center}
-	\textbf{МИНОБРНАУКИ РОССИИ}\\
-	\textbf{САНКТ-ПЕТЕРБУРГСКИЙ ГОСУДАРСТВЕННЫЙ ЭЛEКТРОТЕХНИЧЕСКИЙ УНИВЕРСИТЕТ}\\ 
-	\textbf{«ЛЭТИ» ИМ. В.И. УЛЬЯНОВА (ЛЕНИНА)}\\
-	\textbf{Кафедра \department}\\
+			\vspace*{10mm}
+			Санкт-Петербург
 
-	\vspace*{70mm}
+			\vspace*{2mm}
+			\the\year
+			\vspace*{4mm}
+		\end{figure}
 
-	\textbf{ОТЧЁТ}\\
-	\textbf{по лабораторной работе №\labnumber}\\
-	\textbf{по дисциплине «\discipline»}\\
-	\textbf{Тема: \labname}\\
+	\end{center}
+	\thispagestyle{empty}
 
-	\begin{figure}[b]
-		\centering
-		\begin{tabular}{ccc} 
-			Студент\ifx\companion\nothing \space \else ы \space \fi гр. 7291 & 
-				\underline{\hspace{3cm}} &  Фирюлин Д. И. \\\\
-			\ifx\companion\nothing \else & \underline{\hspace{3cm}} &  \companion \\\\ \fi
-			Преподаватель & \underline{\hspace{3cm}} & \lecturer\\\\
-		\end{tabular}
-		
-		\vspace*{10mm}
-		Санкт-Петербург
-		
-		\vspace*{2mm}
-		\the\year
-		\vspace*{4mm}
-	\end{figure}
-	
-\end{center}
-\thispagestyle{empty}
+	\newpage
+	%\tableofcontents
 
-\newpage
-%\tableofcontents
-
-% =========================== PUT YOUR WATER HERE =============================
+	% =========================== PUT YOUR WATER HERE =============================
 
 
-%\newpage
-%\addcontentsline{toc}{section}{Список литературы}
-%\bibliography{biblio}     %% имя библиографической базы (bib-файла) 
+	%\newpage
+	%\addcontentsline{toc}{section}{Список литературы}
+	%\bibliography{biblio}     %% имя библиографической базы (bib-файла) 
 
 \end{document}
